@@ -1,4 +1,4 @@
-# ALOHA RESORT
+# Wilken Chapter Challenges
 
 # Ionic Install Steps
 
