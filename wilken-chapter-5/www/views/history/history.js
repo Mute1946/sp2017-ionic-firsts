@@ -43,6 +43,16 @@ angular.model('App')
                         data: []
                     };
                     
+            $http.get('https://api.bitcoinaverage.com/history/' +
+                $scope.history.currency +
+                '/currency_since.csv').success(function 
+                (prices) {
+                    
+                    prices = prices.split(/\n/);
+                    var series = {
+                        data: []
+                    };
+                    
             angular.forEach(prices, function (price, index) {
                 price = price.split(',');
                 var date = new Date(price[0].replace(' ', 'T')).getTime();

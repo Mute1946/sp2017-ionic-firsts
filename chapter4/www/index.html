@@ -11,9 +11,29 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+            <!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+    <script>
+  // Initialize the Firebase SDK
+  var config = {
+    apiKey: 'AIzaSyD0rWuWNsd2ClPbJAvFpYhbmkTBlWRuP8s',
+    authDomain: '<your-auth-domain>',
+    databaseURL: 'https://phillip-ionic-and-firease.firebaseio.com',
+    storageBucket: '<your-storage-bucket>'
+  };
+  firebase.initializeApp(config);
+</script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -23,6 +43,7 @@
     <script src="views/reservation/reservation.js"></script>
     <script src="views/weather/weather.js"></script>
     <script src="js/services.js"></script>
+    
   </head>
   <body ng-app="App">
 

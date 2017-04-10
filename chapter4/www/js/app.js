@@ -1,4 +1,4 @@
-angular.module('App', ['ionic'])
+angular.module('App', ['ionic', 'firebase'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
 
@@ -21,6 +21,7 @@ angular.module('App', ['ionic'])
   $urlRouterProvider.otherwise('/home');
 
 })
+
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
